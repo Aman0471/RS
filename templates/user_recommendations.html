@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head><title>Recommendations</title></head>
+<body>
+    <h2>Recommended Anime for User ID {{ user_id }}</h2>
+    <ul>
+        {% for name, score in recommendations %}
+            <li><strong>{{ name }}</strong> — Predicted Rating: {{ score }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Back</a>
+</body>
+</html>
